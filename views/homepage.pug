@@ -1,0 +1,82 @@
+extends layout
+
+block content
+    // Page Content
+    .container
+      // Heading Row
+      .row.my-4
+        .col-lg-12
+          #demo.carousel.slide(data-ride='carousel')
+            ul.carousel-indicators
+              li.active(data-target='#demo', data-slide-to='0')
+              li(data-target='#demo', data-slide-to='1')
+              li(data-target='#demo', data-slide-to='2')
+            .carousel-inner
+              .carousel-item.active
+                img(src='http://www.sjsu.edu/music/pics/sjsu_choir_02.jpg', alt='Los Angeles', width='1100', height='400')
+                .carousel-caption
+                  h3 Los Angeles
+                  p We had such a great time in LA!
+              .carousel-item
+                img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRezEGbTNIUCOkpo9a_pHuthIY6gllnw_qLGIGbu8iNVjCqslGr', alt='Chicago', width='1100', height='400')
+                .carousel-caption
+                  h3 Chicago
+                  p Thank you, Chicago!
+              .carousel-item
+                img(src='https://www.mormontabernaclechoir.org/content/dam/motab/blog/2017/09/choir-tour-2018-blog.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg', alt='New York', width='1100', height='400')
+                .carousel-caption
+                  h3 New York
+                  p We love the Big Apple!
+            a.carousel-control-prev(href='#demo', data-slide='prev')
+              span.carousel-control-prev-icon
+            a.carousel-control-next(href='#demo', data-slide='next')
+              span.carousel-control-next-icon
+        // /.col-lg-8
+        .col-lg-12
+          h1 	加入合唱团
+          p
+            | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
+          a.btn.btn-primary.btn-lg(href='#') Call to Action!
+        // /.col-md-4
+      // /.row
+      // Call to Action Well
+      .card.text-white.bg-secondary.my-4.text-center
+        .card-body
+          p.text-white.m-0
+            | This call to action card is a great place to showcase some important information or display a clever tagline!
+      // Content Row
+      .row
+        .col-md-4.mb-4
+          .card.h-100
+            a(href="/pictures")
+              img.card-img-top.view.zoom(src='photos.jpg', alt='Card image cap' href='')
+            .card-body
+              h2.card-title 照片
+              p.card-text
+                | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
+            .card-footer
+              a.btn.btn-primary(href='/pictures') More Info
+        // /.col-md-4
+        .col-md-4.mb-4
+          .card.h-100
+            a(href="/sheets")
+              img.card-img-top(src='little_swallow_sheet2.gif', alt='Card image cap')
+            .card-body
+              h2.card-title 简谱
+              p.card-text
+                | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
+            .card-footer
+              a.btn.btn-primary(href='/sheets') More Info
+        // /.col-md-4
+        .col-md-4.mb-4
+          .card.h-100
+            a(href="/music")
+              img.card-img-top(src='files2.png', alt='Card image cap')
+            .card-body
+              h2.card-title 音乐/乐谱下载
+              p.card-text
+                | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
+            .card-footer
+              a.btn.btn-primary(href='music') More Info
+
+
