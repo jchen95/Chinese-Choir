@@ -3,42 +3,70 @@ extends layout
 block content
 
   .container
-    h1.my-4.text-center.text-lg-left Thumbnail Gallery
+    h1.my-4.text-center.text-lg-left 照片
     .row.text-center.text-lg-left
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-      .col-lg-3.col-md-4.col-xs-6
-        a.d-block.mb-4.h-100(href='#')
-          img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-          
+      .col-lg-2
+        ul.list-group
+          li.list-group-item.list-group-item-dark 影集
+          li.list-group-item Album #1
+          li.list-group-item Album #2
+          li.list-group-item Album #3
+          li.list-group-item Album #4
+      .col-lg-10
+        .row
+          for picture in pictures
+            .col-lg-3.col-md-4.col-xs-6
+              a.d-block.mb-4.h-100(href='/pictures/' + picture)
+                img.img-fluid.img-thumbnail(src='/upload/' + picture, alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='/pictures/2')
+          //-     img.img-fluid.img-thumbnail(src='/upload/10340813a5b9737b598c41f9cb195778.jpg1521308049528.jpg', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='/upload/10340813a5b9737b598c41f9cb195778.jpg1521308049528.jpg', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://selfrecruiter.com/wp-content/uploads/2015/07/automne-1920-1080.jpg', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+          //- .col-lg-3.col-md-4.col-xs-6
+          //-   a.d-block.mb-4.h-100(href='#')
+          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+    .row
+      .col-lg-2
+      .col-lg-7  
+        nav(aria-label='breadcrumb')
+        ol.breadcrumb
+          form(method="POST",enctype="multipart/form-data",action="/pictures")
+            input(type="file" name="upl")
+            button#btnSubmit.btn.btn-primary(type='submit') Submit 
+            br 
+          if typeof msg !=undefined
+            br
+            p= msg
+          else
+            p ""
+
+    

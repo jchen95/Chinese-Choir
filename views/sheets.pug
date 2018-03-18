@@ -1,14 +1,17 @@
 extends layout
 
 block content
-  .container.justify-content-center.fill
-    .row
-      .col-4
+  .container
+    h1.my-4.text-center.text-lg-left 简谱
+    .row.text-center.text-lg-left
+      .col-lg-3
         ul.list-group
           li.list-group-item Cras justo odio
           li.list-group-item Dapibus ac facilisis in
           li.list-group-item Morbi leo risus
           li.list-group-item Porta ac consectetur ac
           li.list-group-item Vestibulum at eros
-      .col-8
-        iframe(src='partition.pdf', frameborder='0')
+      .col-9
+        .row
+          .col-12
+            iframe(src='partition.pdf', frameborder='0')
