@@ -1,8 +1,54 @@
-extends layout
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title 春之声合唱团
+    link(href='/vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/small-business.css', rel='stylesheet')
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='/') 春之声合唱团
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            //- DROPDOWN ITEM
+            //- li.nav-item.dropdown
+            //-  a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            //-   | Dropdown
+            //-  .dropdown-menu(aria-labelledby='navbarDropdown')
+            //-   a.dropdown-item(href='#') Files
+            li.nav-item 
+              a.nav-link(href='/pictures/album1') 照片 
+            li.nav-item
+              a.nav-link(href='/files') 简谱/乐谱下载
+            li.nav-item
+              a.nav-link(href='/contact') 联系
 
-block content
 
-  .container
-    .row.text-center.text-lg-left
-      .col-lg-12
-        img.img-fluid.img-thumbnail(src= '/upload/' + picture)
+
+    .container
+      .row.text-center
+        .col-lg-12
+          p#files(hidden='')= files
+          p#album(hidden='')= album 
+          img#currentpic.img-fluid.img-thumbnail(src= '/upload/' + album + '/' + picture)
+      .row.text-center
+        .col-lg-6
+          img#back(src= '/l.png' style= 'height: 100px; width: 100px')
+        .col-lg-6
+          img#next(src= '/r.png' style= 'height: 100px; width: 100px')
+
+
+          block content
+  footer.py-5.bg-dark
+    .container
+      p.m-0.text-center.text-white Jason Chen ©  2018
+  script(src='../vendor/jquery/jquery.min.js')
+  script(src='../vendor/bootstrap/js/bootstrap.bundle.min.js')
+  script(src='../script.js')
+  

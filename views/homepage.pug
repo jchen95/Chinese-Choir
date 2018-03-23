@@ -1,18 +1,14 @@
 extends layout
 
 block content
-    // Page Content
     .container.mt-4
       .row
         .col-lg-2
           ul.nav.nav-pills.nav-fill.flex-column
             li.nav-item
-              a.nav-link(href='/pictures') 照片 
+              a.nav-link(href='/pictures/album1') 照片 
             li.nav-item
-              a.nav-link(href='/sheets') 简谱
-            li.nav-item
-              a.nav-link(href='/music') 乐谱下载
-            li.nav-item
+              a.nav-link(href='/files') 简谱/乐谱下载
               a.nav-link(href='/contact') Contact
         .col-lg-10
           #demo.carousel.slide(data-ride='carousel')
@@ -48,36 +44,36 @@ block content
             .card-body
               p.text-white.m-0
                 | This call to action card is a great place to showcase some important information or display a clever tagline!
-          .row
-            .col-md-4.mb-4
-              .card.h-100
-                a(href="/pictures")
-                  img.card-img-top.view.zoom(src='photos.jpg', alt='Card image cap' href='')
-                .card-body
-                  h2.card-title 照片
-                  p.card-text
-                    | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
-                .card-footer
-                  a.btn.btn-primary(href='/pictures') More Info
-            .col-md-4.mb-4
-              .card.h-100
-                a(href="/sheets")
-                  img.card-img-top(src='little_swallow_sheet2.gif', alt='Card image cap')
-                .card-body
-                  h2.card-title 简谱
-                  p.card-text
-                    | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
-                .card-footer
-                  a.btn.btn-primary(href='/sheets') More Info
-            .col-md-4.mb-4
-              .card.h-100
-                a(href="/music")
-                  img.card-img-top(src='files2.png', alt='Card image cap')
-                .card-body
-                  h2.card-title 音乐/乐谱下载
-                  p.card-text
-                    | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
-                .card-footer
-                  a.btn.btn-primary(href='music') More Info
+          //- .row
+          //-   .col-md-4.mb-4
+          //-     .card.h-100
+          //-       a(href="/pictures/album1")
+          //-         img.card-img-top.view.zoom(src='photos.jpg', alt='Card image cap' href='')
+          //-       .card-body
+          //-         h2.card-title 照片
+          //-         p.card-text
+          //-           | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
+          //-       .card-footer
+          //-         a.btn.btn-primary(href='/pictures') More Info
+          //-   .col-md-4.mb-4
+          //-     .card.h-100
+          //-       a(href="/sheets")
+          //-         img.card-img-top(src='little_swallow_sheet2.gif', alt='Card image cap')
+          //-       .card-body
+          //-         h2.card-title 简谱
+          //-         p.card-text
+          //-           | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
+          //-       .card-footer
+          //-         a.btn.btn-primary(href='/sheets') More Info
+          //-   .col-md-4.mb-4
+          //-     .card.h-100
+          //-       a(href="/music")
+          //-         img.card-img-top(src='files2.png', alt='Card image cap')
+          //-       .card-body
+          //-         h2.card-title 音乐/乐谱下载
+          //-         p.card-text
+          //-           | 仕外対林紙武案敷自道重場演打先問作。個郵紙宣試管交職周題稿融検。確日戸他腰戒学遊規強断比移城木問葉訴義特。頑稿事稿全書労列演記設術新。毅新別兄脳状見部経滴新文器正資寺土状佐講。線企埼麻的南治井道埼表白。写船広佐現高切影彼伴直日豊登就児相要金。三断永続一病下奪破説傾輸毎一客届関。無食葛毎勝育童埼林新城扶傘
+          //-       .card-footer
+          //-         a.btn.btn-primary(href='music') More Info
 
 

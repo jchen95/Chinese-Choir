@@ -8,59 +8,26 @@ block content
       .col-lg-2
         ul.list-group
           li.list-group-item.list-group-item-dark 影集
-          li.list-group-item Album #1
-          li.list-group-item Album #2
-          li.list-group-item Album #3
-          li.list-group-item Album #4
+          li.list-group-item
+            a(href= '/pictures/album1') Album #1
+          li.list-group-item
+            a(href= '/pictures/album2') Album #2
+          li.list-group-item
+            a(href= '/pictures/album3') Album #3
       .col-lg-10
         .row
-          for picture in pictures
+          for album in albums
             .col-lg-3.col-md-4.col-xs-6
-              a.d-block.mb-4.h-100(href='/pictures/' + picture)
-                img.img-fluid.img-thumbnail(src='/upload/' + picture, alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='/pictures/2')
-          //-     img.img-fluid.img-thumbnail(src='/upload/10340813a5b9737b598c41f9cb195778.jpg1521308049528.jpg', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='/upload/10340813a5b9737b598c41f9cb195778.jpg1521308049528.jpg', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://selfrecruiter.com/wp-content/uploads/2015/07/automne-1920-1080.jpg', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
-          //- .col-lg-3.col-md-4.col-xs-6
-          //-   a.d-block.mb-4.h-100(href='#')
-          //-     img.img-fluid.img-thumbnail(src='http://placehold.it/400x300', alt='')
+              h1= album
+              a.d-block.mb-4.h-100(href='/pictures/' + album[0])
+                img.img-fluid.img-thumbnail(src='/upload/', alt='')
     .row
       .col-lg-2
       .col-lg-7  
         nav(aria-label='breadcrumb')
         ol.breadcrumb
           form(method="POST",enctype="multipart/form-data",action="/pictures")
-            input(type="file" name="upl")
+            input(type='file', name='filefield', multiple='multiple')
             button#btnSubmit.btn.btn-primary(type='submit') Submit 
             br 
           if typeof msg !=undefined
